@@ -1,0 +1,16 @@
+.parallax {
+  height: 100%;
+  perspective: 1px;
+  overflow-x: hidden;
+  transform-style: preserve-3d;
+  //overflow-y: auto;
+}
+
+.parallax__group {
+  transform-style: inherit;
+}
+
+.parallax__element {
+  transform: translateZ(-1px) scale(2);
+  transform-style: inherit;
+}

@@ -1,0 +1,85 @@
+@import "../../sass/variables";
+
+.alice-carousel {
+  position: relative;
+}
+
+.alice-carousel__wrapper {
+  overflow: hidden;
+}
+
+.alice-carousel__stage {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: stretch;
+
+}
+
+.alice-carousel__stage-item {
+  flex-grow: 1;
+
+  @media (min-width: $max-mobile-width) {
+    & .container {
+      padding: 0;
+    }
+  }
+}
+
+.alice-carousel__dots {
+  display: none;
+}
+
+.alice-carousel__prev-btn-item {
+  margin: 0;
+  background-image: url("../../img/decor/svg/left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  left: 7%;
+  top: calc(50% - 66px);
+  padding: 20px 10px;
+  width: 5px;
+  height: 26px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.5;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: calc(50% - 225px);
+  }
+}
+
+.alice-carousel__next-btn-item {
+  margin: 0;
+  background-image: url("../../img/decor/svg/left-arrow.svg");
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  right: 7%;
+  top: calc(50% - 66px);
+  padding: 20px 10px;
+  width: 5px;
+  height: 26px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.5;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: calc(50% - 225px);
+  }
+}

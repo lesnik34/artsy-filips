@@ -1,0 +1,39 @@
+@import "../../sass/variables";
+
+.admin {
+  padding-top: 58px;
+}
+
+.admin__wrapper {
+  height: calc(100vh - 162px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.admin__item {
+  margin-bottom: 20px;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.admin__link {
+  color: $basic-black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: $default-font;
+  
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+  }
+}

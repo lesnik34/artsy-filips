@@ -1,14 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter} from "react-router-dom";
+import {AuthState} from "./context/auth/AlertState";
+import {LangState} from "./context/lang/LangState";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <AuthState>
+        <LangState>
+            <BrowserRouter>
+                <App/>
+            </BrowserRouter>
+        </LangState>
+    </AuthState>,
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

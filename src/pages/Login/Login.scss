@@ -1,0 +1,45 @@
+@import "../../sass/variables";
+
+.login {
+  padding-top: 58px;
+}
+
+.login__wrapper {
+  height: calc(100vh - 162px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__input {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__label {
+  font-family: $default-font;
+  font-size: 16px;
+  text-transform: lowercase;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.login__type {
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid $tundora;
+  border-radius: 2px;
+  outline: none;
+}
+
+.login__submit {
+  width: 100%;
+  font-family: $default-font;
+  text-transform: lowercase;
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  outline: none;
+}

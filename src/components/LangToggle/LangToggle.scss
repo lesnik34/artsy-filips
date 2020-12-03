@@ -1,0 +1,39 @@
+@import "../../sass/variables";
+
+.lang-toggle {
+  display: inline-block;
+}
+
+.lang-toggle--span {
+  padding: 0 2px;
+}
+
+.lang-toggle--button {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  letter-spacing: 2px;
+  font-family: $default-font;
+  background-color: inherit;
+  cursor: pointer;
+
+  &:focus {
+    color: $tundora;
+    opacity: 0.3;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+}
+
+.lang-toggle--active {
+  color: $scorpion;
+  opacity: 0.7;
+}

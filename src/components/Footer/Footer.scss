@@ -1,0 +1,26 @@
+@import "../../sass/variables";
+
+footer {
+  background-color: $aldo;
+}
+
+.footer {
+  background-color: $gallery;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.footer__text {
+  max-width: 190px;
+  font-size: 6px;
+  font-family: $default-font;
+  color: $scorpion;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 10px;
+    max-width: 250px;
+  }
+}

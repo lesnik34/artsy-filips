@@ -1,0 +1,44 @@
+@import "../../sass/variables";
+
+.preview {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 1040px;
+    margin: 0 auto;
+  }
+}
+
+.preview__wrapper {
+  background-color: rgba($basic-black, .37);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.preview__title {
+  position: absolute;
+  font-size: 38px;
+  font-family: $default-font;
+  text-transform: lowercase;
+  text-align: center;
+  color: $basic-white;
+  margin: 0;
+  left: 0;
+  right: 0;
+  top: calc(50% - 24px);
+  z-index: 10;
+  font-weight: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 58px;
+    top: calc(50% - 40px);;
+  }
+}
+
+.preview__image {
+  width: 100%;
+}

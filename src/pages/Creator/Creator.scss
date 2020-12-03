@@ -1,0 +1,80 @@
+@import "../../sass/variables";
+
+.creator {
+  padding-top: 58px;
+}
+
+.creator__wrapper {
+  height: calc(100vh - 162px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.creator__form {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.creator__item {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.creator__label {
+  font-family: $default-font;
+  font-size: 16px;
+  text-transform: lowercase;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.creator__input {
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid $tundora;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+}
+
+.creator__submit {
+  border: none;
+  background-color: transparent;
+  font-family: $default-font;
+  text-transform: lowercase;
+  width: 100%;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.creator__category {
+  padding: 5px;
+  border: 1px solid $tundora;
+  border-radius: 3px;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+.creator__file {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}

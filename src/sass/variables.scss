@@ -1,0 +1,130 @@
+$default-font: "Quicksand", "Arial", sans-serif;
+
+$tablet-width: 768px;
+$desktop-width: 1280px;
+
+$max-mobile-width: 380px;
+$max-tablet-width: 980px;
+
+$basic-black: #000;
+$basic-white: #fff;
+$main-background: #F5F5F5;
+
+$mine-shaft : #1F1F1F;
+$tundora: #444444;
+$gallery: #EBEBEB;
+$scorpion: #5E5B5B;
+$mercury: #E8E8E8;
+$aldo: #DEDEDE;
+
+$error: #FF6666;
+$success: #00CC66;
+$default: #6699CC;
+
+@keyframes burger {
+  0% {
+    right: 11vw;
+  }
+
+  100% {
+    right: 85vw;
+  }
+}
+
+@keyframes line-one {
+  0% {
+    top: 10px;
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(-40deg);
+    top: calc(50% - 1px);
+  }
+}
+
+@keyframes line-two {
+  0% {
+    bottom: 10px;
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(40deg);
+    bottom: calc(50%);
+  }
+}
+
+@keyframes nav-menu {
+  0% {
+    right: -100vw;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes burger-gallery {
+  0% {
+    margin-top: -155px;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes path {
+  from {
+    stroke-dashoffset: 822;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes logo-anim-reverse {
+  0%,
+  50% {
+    stroke-dashoffset: 100%;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes logo-anim {
+  0%,
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 100%;
+  }
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes desktop-nav {
+  0% {
+    left: -200px;
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 100%;
+  }
+
+  100% {
+    left: -10px;
+  }
+}
+

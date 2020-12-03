@@ -1,0 +1,117 @@
+@import "../../sass/variables";
+
+.burger__overlay {
+
+}
+
+.burger {
+  background-color: $main-background;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 60;
+  width: 80vw;
+  height: 100vh;
+}
+
+.burger__button {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.burger.entering {
+  animation: nav-menu 700ms ease-out forwards;
+}
+
+.burger.exiting {
+  animation: nav-menu 500ms ease-out alternate-reverse;
+}
+
+.burger__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 30px;
+  margin-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 80px;
+    margin-top: 50px;
+  }
+}
+
+.burger__item {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid $mercury;
+  background: $main-background;
+
+  &:last-child {
+    border: none;
+  }
+
+  &--gallery {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--standard {
+    z-index: 67;
+    background-color: $main-background;
+    position: relative;
+  }
+}
+
+.burger__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $basic-black;
+  font-size: 16px;
+  font-family: $default-font;
+  padding: 15px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+    padding: 30px;
+  }
+}
+
+.burger__gallery-list {
+  padding-left: 0;
+  padding-top: 10px;
+  padding-bottom: 35px;
+  z-index: 65;
+  position: relative;
+}
+
+.burger__gallery-item {
+  list-style: none;
+  padding-bottom: 25px;
+
+  &:last-child {
+    padding: 0;
+  }
+}
+
+.burger__gallery-link {
+  text-transform: lowercase;
+  color: $tundora;
+  text-decoration: none;
+  font-family: $default-font;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+  }
+}
+
+.burger-gallery-exit {
+  animation: burger-gallery ease-out 300ms alternate-reverse;
+}
+
+.burger-gallery-enter {
+  animation: burger-gallery ease-out 500ms forwards;
+}
+
+

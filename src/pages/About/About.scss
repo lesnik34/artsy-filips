@@ -1,0 +1,109 @@
+@import "../../sass/variables";
+
+.about-me {
+  padding-top: 59px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 70px;
+  }
+}
+
+.about-me__wrapper {
+  padding-top: 28px;
+  padding-bottom: 62px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+}
+
+.about-me__toggle {
+  min-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 18px;
+}
+
+.about-me__text {
+  font-size: 12px;
+  font-family: $default-font;
+  margin-bottom: 22px;
+  margin-top: 0;
+  letter-spacing: 0.2px;
+  text-align: justify;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+  }
+}
+
+.about-me__photo {
+  width: 100vw;
+  height: 67vw;
+  background-image: url("../../img/decor/jpg/about-me-photo-mobile.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/decor/jpg/about-me-photo-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100vw;
+    height: 480px;
+    background-image: url("../../img/decor/jpg/about-me-photo-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/decor/jpg/about-me-photo-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 850px;
+    height: 500px;
+    margin: 0 auto;
+    background-image: url("../../img/decor/jpg/about-me-photo-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/decor/jpg/about-me-photo-desktop@2x.jpg");
+    }
+  }
+}
+
+.about-me__img {
+  width: 100vw;
+  height: 200px;
+
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../img/decor/webp/about-me.webp");
+
+  @media (min-width: $tablet-width) {
+    background-position: center -180px;
+    width: 100vw;
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: center -360px;
+    width: 1040px;
+    height: 190px;
+    top: 26px;
+  }
+}

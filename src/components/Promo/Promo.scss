@@ -1,0 +1,79 @@
+@import "./src/sass/variables";
+
+.promo {
+  padding-top: 59px;
+  position: relative;
+  height: 97vh;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+    height: 132vh;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 58px;
+  }
+}
+
+.promo__img {
+  width: 90vw;
+  height: 70vh;
+  position: absolute;
+  left: -20px;
+  top: 0;
+
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../img/decor/jpg/first-background-mobile.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/decor/jpg/first-background-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 82vh;
+    background-image: url("../../img/decor/jpg/first-background-tablet.jpg");
+    top: 66px;
+    left: -40px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/decor/jpg/first-background-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/decor/jpg/first-background-desktop.jpg");
+    width: 70vw;
+    height: 82vh;
+    left: auto;
+    right: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/decor/jpg/first-background-desktop@2x.jpg");
+    }
+  }
+}
+
+.promo__arrow {
+  width: 50px;
+  height: 20px;
+  background: url("../../img/decor/svg/down-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  outline: none;
+  position: absolute;
+  bottom: 12vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
+    width: 70px;
+    background-size: 60px 25px;
+    bottom: 36vh;
+  }
+}

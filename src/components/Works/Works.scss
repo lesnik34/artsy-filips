@@ -1,0 +1,83 @@
+@import "../../sass/variables";
+
+.works {
+  padding: 0;
+  background-color: $main-background;
+  position: relative;
+}
+
+.works__wrapper {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  z-index: 10;
+  position: relative;
+  margin-bottom: 113vh;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    margin-bottom: 130vh;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 70px;
+  }
+}
+
+.works__title {
+  font-size: 16px;
+  font-family: $default-font;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 50px;
+  
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 740px;
+  }
+}
+
+.works__img {
+  width: 100vw;
+  height: 70vh;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 95vh;
+  z-index: 6;
+
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../img/decor/jpg/third-background-mobile.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/decor/jpg/third-background-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/decor/jpg/third-background-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/decor/jpg/third-background-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 73vw;
+    height: 85vh;
+    background-image: url("../../img/decor/jpg/third-background-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/decor/jpg/third-background-desktop@2x.jpg");
+    }
+  }
+}

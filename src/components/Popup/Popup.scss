@@ -1,0 +1,64 @@
+@import "../../sass/variables";
+
+.popup {
+  background-color: $default;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  border-radius: 10px 0 0 10px;
+
+  &--success {
+    background-color: $success;
+  }
+
+  &--error {
+    background-color: $error;
+  }
+}
+
+.popup__title {
+  font-size: 12px;
+  margin: 0;
+  font-weight: normal;
+  font-family: $default-font;
+  margin-bottom: 7px;
+}
+
+.popup__text {
+  font-size: 10px;
+  margin: 0;
+  font-weight: normal;
+  font-family: $default-font;
+  color: $mine-shaft;
+  max-width: 150px;
+}
+
+.popup__btn--close {
+  height: 35px;
+  width: 34px;
+  margin-right: 7px;
+  position: relative;
+}
+
+.popup__line {
+  width: 18px;
+  height: 1px;
+  background-color: $tundora;
+  position: absolute;
+
+  &--first {
+    transform: rotate(55deg);
+    top: 17px;
+    left: 4px;
+  }
+
+  &--second {
+    transform: rotate(-55deg);
+    top: 17px;
+    left: 4px;
+  }
+}
+

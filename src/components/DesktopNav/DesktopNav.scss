@@ -1,0 +1,85 @@
+@import "../../sass/variables";
+
+.desktop-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 650px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.desktop-nav__item {
+  position: relative;
+}
+
+.desktop-nav__link {
+  font-size: 16px;
+  text-decoration: none;
+  color: $basic-black;
+  font-family: $default-font;
+  text-transform: lowercase;
+
+  &:hover {
+    color: $tundora;
+  }
+
+  &:focus {
+    color: $scorpion;
+    outline: none;
+  }
+}
+
+.desktop-nav__button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.desktop-nav__gallery-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: -10px;
+  top: 33px;
+  min-width: 140px;
+  background-color: rgba($main-background, 0.7);
+  padding: 10px 15px;
+  padding-top: 15px;
+}
+
+.desktop-nav-gallery-enter {
+  animation: desktop-nav 500ms forwards;
+}
+
+.desktop-nav-gallery-exit {
+  animation: desktop-nav 300ms alternate-reverse;
+}
+
+.desktop-nav__gallery-item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.desktop-nav__gallery-link {
+  font-size: 14px;
+  text-decoration: none;
+  color: $basic-black;
+  font-family: $default-font;
+  text-transform: lowercase;
+
+  &:hover {
+    color: $tundora;
+  }
+
+  &:focus {
+    color: $scorpion;
+    outline: none;
+  }
+}
