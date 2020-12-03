@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.scss'
+import {NavLink} from "react-router-dom";
 
 export const Footer = () => {
     return (
@@ -12,6 +13,8 @@ export const Footer = () => {
                     <br/>
                     All Rights Reserved
                 </p>
+
+                <NavLink to="/login" className='footer__text'>see more</NavLink>
             </div>
         </section>
     )
