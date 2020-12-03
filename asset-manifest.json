@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/artsy-filips/static/css/main.efeeb4fb.chunk.css",
+    "main.js": "/artsy-filips/static/js/main.eb30d123.chunk.js",
+    "main.js.map": "/artsy-filips/static/js/main.eb30d123.chunk.js.map",
+    "runtime-main.js": "/artsy-filips/static/js/runtime-main.62433cf6.js",
+    "runtime-main.js.map": "/artsy-filips/static/js/runtime-main.62433cf6.js.map",
+    "static/js/2.4d31586c.chunk.js": "/artsy-filips/static/js/2.4d31586c.chunk.js",
+    "static/js/2.4d31586c.chunk.js.map": "/artsy-filips/static/js/2.4d31586c.chunk.js.map",
+    "static/js/3.660328dc.chunk.js": "/artsy-filips/static/js/3.660328dc.chunk.js",
+    "static/js/3.660328dc.chunk.js.map": "/artsy-filips/static/js/3.660328dc.chunk.js.map",
+    "index.html": "/artsy-filips/index.html",
+    "static/css/main.efeeb4fb.chunk.css.map": "/artsy-filips/static/css/main.efeeb4fb.chunk.css.map",
+    "static/js/2.4d31586c.chunk.js.LICENSE.txt": "/artsy-filips/static/js/2.4d31586c.chunk.js.LICENSE.txt",
+    "static/media/About.scss": "/artsy-filips/static/media/about.bbaa15a8.webp",
+    "static/media/Contacts.scss": "/artsy-filips/static/media/contacts-gif.7f9c5ae0.gif",
+    "static/media/Promo.scss": "/artsy-filips/static/media/first-background-tablet@2x.996c0d77.jpg",
+    "static/media/WorksSlider.scss": "/artsy-filips/static/media/left-arrow.321e569e.svg",
+    "static/media/Gallery.scss": "/artsy-filips/static/media/works.cbad5348.webp",
+    "static/media/index.scss": "/artsy-filips/static/media/quicksand-v21-latin-regular.55896949.woff",
+    "static/media/Works.scss": "/artsy-filips/static/media/third-background-tablet@2x.1e25dea6.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.62433cf6.js",
+    "static/js/2.4d31586c.chunk.js",
+    "static/css/main.efeeb4fb.chunk.css",
+    "static/js/main.eb30d123.chunk.js"
+  ]
+}
