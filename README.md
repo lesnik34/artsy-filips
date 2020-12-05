@@ -1,4 +1,6 @@
 # В процессе создания
 
-Источник:
-https://www.instagram.com/artsy.filips/
+[Инстаграм заказчика](https://www.instagram.com/artsy.filips/)
+
+[Демо](https://lesnik34.github.io/artsy-filips)
+
